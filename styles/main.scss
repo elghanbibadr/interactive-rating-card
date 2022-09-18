@@ -1,0 +1,104 @@
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-DarkBlue: hsl(216, 12%, 8%);
+
+body{
+    background-color: $Very-DarkBlue;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+   color: $Medium-Grey;
+}
+
+.card{
+    width: 60%;
+    background-color: $Dark-Blue;
+    border-radius: 18px;
+    padding:  2rem;
+    margin-inline: auto;
+    margin-top:7rem;
+    
+    &__star--box{
+        img{
+            height: 16px;
+        }
+    }
+
+    &__title{
+        color: white;
+        margin-top: 1.5rem;
+        font-size:1.8rem;
+        font-weight:lighter;
+    }
+
+    &__steps{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+         span{
+             color: white;
+             cursor: pointer;
+             font-weight: bold;
+             width: 20px;
+             transition: 0.5s;
+             &:hover{
+                background-color: $Light-Grey;
+             }
+         }
+    }
+
+    &__btn--box{
+        display: flex;
+        justify-content: center;
+        button{
+            width: 90%;
+            background-color: #fb7413;
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            border: 0;
+            border-radius: 20px;
+            font-weight: bold;
+            padding-block: 10px;
+            text-transform:uppercase;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.circle{
+    background-color:hsl(212, 13%, 25%);
+    display: inline-flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 20px;
+}
+
+.step-orange{
+    background-color: #fb7413;
+    &:hover{
+        background-color: #fb7413 !important;
+    }
+}
+
+.selected{
+    text-align: center;
+    &__img{
+     margin-block: 2rem;
+    }
+
+    &__choix{
+        color: #fb7413;
+        font-weight: bold;
+    }
+    &__greeting{
+        color: white;
+    }
+}
+
+.hidden{
+    display: none;
+}

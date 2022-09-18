@@ -1,0 +1,119 @@
+body {
+  background-color: #121417;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1rem;
+  color: #7c8798;
+}
+
+.card {
+  width: 60%;
+  background-color: #252d37;
+  border-radius: 18px;
+  padding: 2rem;
+  margin-inline: auto;
+  margin-top: 7rem;
+}
+
+.card__star--box img {
+  height: 16px;
+}
+
+.card__title {
+  color: white;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+.card__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.card__steps span {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  width: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card__steps span:hover {
+  background-color: #959eac;
+}
+
+.card__btn--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__btn--box button {
+  width: 90%;
+  background-color: #fb7413;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  padding-block: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.circle {
+  background-color: #373f48;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  height: 20px;
+}
+
+.step-orange {
+  background-color: #fb7413;
+}
+
+.step-orange:hover {
+  background-color: #fb7413 !important;
+}
+
+.selected {
+  text-align: center;
+}
+
+.selected__img {
+  margin-block: 2rem;
+}
+
+.selected__choix {
+  color: #fb7413;
+  font-weight: bold;
+}
+
+.selected__greeting {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

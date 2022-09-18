@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+<div class="card firstCard">
+  <div class="card__star--box circle">
+    <img src="./images/icon-star.svg" alt="star icon" class="card__star">
+  </div>
+  <h1 class="card__title">How did we do?  </h1>
+  <p class="card__desc">
+    Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+  </p>
+  <div class="card__steps">
+    <span class="card__steps--number circle">1</span>
+    <span class="card__steps--number circle">2</span>
+    <span class="card__steps--number circle">3</span>
+    <span class="card__steps--number circle">4</span>
+    <span class="card__steps--number circle">5</span>
+  </div>
+  <div class="card__btn--box"><button class="card__btn">Submit</button></div>
+</div>
+
+<!-- SELECTED CARD -->
+<div class="selected card hidden">
+  <img src="/images/illustration-thank-you.svg" alt="illustration-thank-you image" class="selected__img">
+  <p class="selected__choix">You selected <span class="selected__choix-number">1</span> out of 5</p>
+  <h2 class="selected__greeting">Thank you!  </h2>
+  <p class="selected__desc">We appreciate you taking the time to give a rating. If you ever need more support. don't hesitate to get in touch!</p>
+
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
